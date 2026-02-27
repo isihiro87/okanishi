@@ -16,8 +16,8 @@
   placeholder.textContent = '選択してください';
   placeholder.selected = true;
 
-  // 年プルダウン: 1950〜2010 昇順（プレースホルダーを1990付近に配置しスクロール位置を調整）
-  for (var y = 1950; y <= 2010; y++) {
+  // 年プルダウン: 1968〜2010 昇順（1968年=1回生〜、プレースホルダーを1990付近に配置）
+  for (var y = 1968; y <= 2010; y++) {
     if (y === 1990) {
       yearSelect.appendChild(placeholder);
     }
@@ -52,8 +52,8 @@
 
     resultDiv.innerHTML =
       'あなたは <span class="calc-result__number">' + kaisei + '回生</span> です' +
-      '<p class="calc-result__cta">公式LINEに「<strong>' + kaisei + '回生</strong>」と送って登録しましょう！</p>' +
-      '<a href="#" class="btn btn--line calc-result__btn">LINEで友だち追加</a>';
+      '<p class="calc-result__cta">公式LINEに「<strong>' + kaisei + '回生 お名前</strong>」と送って登録しましょう！</p>' +
+      '<a href="https://line.me/R/ti/p/@gsx2099g" target="_blank" rel="noopener" class="btn btn--line calc-result__btn">LINEで友だち追加</a>';
     resultDiv.classList.add('is-active');
   }
 

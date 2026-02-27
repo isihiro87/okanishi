@@ -628,17 +628,10 @@ a.news-item:hover .news-item__title {
 .line-steps li:nth-child(2)::before { content: '\2461'; }
 .line-steps li:nth-child(3)::before { content: '\2462'; }
 
-.qr-placeholder {
-  width: 160px;
-  height: 160px;
+.qr-code {
+  width: 180px;
+  height: auto;
   margin: 24px auto;
-  border: 2px dashed var(--line);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-secondary);
-  font-size: 0.85rem;
-  border-radius: 4px;
 }
 
 /* ============================================
