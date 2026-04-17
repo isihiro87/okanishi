@@ -376,6 +376,38 @@ main {
 }
 
 /* ============================================
+   Greeting (会長あいさつ)
+   ============================================ */
+.greeting__photo {
+  float: left;
+  margin: 8px 24px 16px 0;
+  text-align: center;
+}
+.greeting__photo img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+.greeting__photo figcaption {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 8px;
+  line-height: 1.6;
+}
+.greeting__body {
+  overflow: hidden;
+}
+.greeting__body p {
+  text-indent: 1em;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+.greeting__body p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================
    Blockquote
    ============================================ */
 blockquote {
