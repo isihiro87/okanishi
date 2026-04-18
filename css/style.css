@@ -379,12 +379,18 @@ main {
    Greeting (会長あいさつ)
    ============================================ */
 .greeting__photo {
-  float: left;
-  margin: 8px 24px 16px 0;
+  float: right;
+  margin: 8px 0 16px 24px;
   text-align: center;
 }
+@media (max-width: 600px) {
+  .greeting__photo {
+    float: none;
+    margin: 0 auto 24px;
+  }
+}
 .greeting__photo img {
-  width: 150px;
+  width: 200px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
